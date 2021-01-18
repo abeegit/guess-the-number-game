@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+ 	<bean id="numberGenerator" class="io.abeegit.NumberGeneratorImpl" />
+ 	
+ 	<bean id="game" class="io.abeegit.GameImpl">
+ 		<!-- the ref passed as property to constructor-arg needs to be the same as the id of the bean -->
+ 		<constructor-arg ref="numberGenerator">
+ 			
+ 		</constructor-arg>
+ 	</bean>
+
+</beans>

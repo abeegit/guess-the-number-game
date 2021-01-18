@@ -1,1 +1,5 @@
-core/Main.class
+io/abeegit/Game.class
+io/abeegit/NumberGeneratorImpl.class
+io/abeegit/GameImpl.class
+io/abeegit/Main.class
+io/abeegit/NumberGenerator.class

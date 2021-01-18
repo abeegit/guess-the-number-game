@@ -1,1 +1,5 @@
-/home/abeegit/eclipse-workspace/guess-the-number-game/core/src/main/java/core/Main.java
+/home/abeegit/eclipse-workspace/guess-the-number-game/core/src/main/java/io/abeegit/Main.java
+/home/abeegit/eclipse-workspace/guess-the-number-game/core/src/main/java/io/abeegit/Game.java
+/home/abeegit/eclipse-workspace/guess-the-number-game/core/src/main/java/io/abeegit/NumberGeneratorImpl.java
+/home/abeegit/eclipse-workspace/guess-the-number-game/core/src/main/java/io/abeegit/GameImpl.java
+/home/abeegit/eclipse-workspace/guess-the-number-game/core/src/main/java/io/abeegit/NumberGenerator.java
