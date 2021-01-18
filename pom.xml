@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.abeegit</groupId>
+  <artifactId>guess-the-number-game</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <!-- The below line tells the Maven project that the pom is a container for sub-modules in the project  -->
+  <packaging>pom</packaging> 
+  <name>GuessTheNumberGame</name>
+  
+  <!-- These lines are generated when creating sub-modules -->
+  <modules>
+  	<module>core</module>
+  </modules>
+  
+  <!-- These are value placeholders in a pom -->
+  <properties>
+  	<logback.version>1.2.3</logback.version>
+  	<spring-context.version>5.3.3</spring-context.version>
+  	<java.version>1.8</java.version>
+  </properties>
+  
+  <dependencyManagement>
+  
+  	<dependencies>
+  	
+  		<dependency>
+  			<groupId>ch.qos.logback</groupId>
+		    <artifactId>logback-classic</artifactId>
+		    <version>${logback.version}</version>
+  		</dependency>
+  		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-context</artifactId>
+		    <version>${spring-context.version}</version>
+		</dependency>
+		  		
+  	</dependencies>
+  	
+  </dependencyManagement>
+  
+  <build>
+	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-compiler-plugin</artifactId>
+  			<version>3.7.0</version>
+  			<configuration>
+  				<target>${java.version}</target>
+  				<source>${java.version}</source>
+  				<verbose>true</verbose>
+  			</configuration>
+  		</plugin>
+  	</plugins>
+  </build>
+  
+</project>
