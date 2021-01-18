@@ -7,10 +7,8 @@
  	<bean id="numberGenerator" class="io.abeegit.NumberGeneratorImpl" />
  	
  	<bean id="game" class="io.abeegit.GameImpl">
- 		<!-- the ref passed as property to constructor-arg needs to be the same as the id of the bean -->
- 		<constructor-arg ref="numberGenerator">
- 			
- 		</constructor-arg>
+ 		<!-- name should match the field in the class and ref should match the id of the bean to be injected -->
+ 		<property name="numberGenerator" ref="numberGenerator"></property>
  	</bean>
 
 </beans>
